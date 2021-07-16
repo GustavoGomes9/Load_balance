@@ -7,7 +7,7 @@ class User:
     def __init__(self):
         self.ttask_left = User.ttask
     
-    @staticmethod #porque usar static ?????
+    @staticmethod 
     def check_ttask():
         if User.ttask < 1 or User.ttask > 10:
             raise LimitException("ttask não corresponde formula '1 < ttask < 10'")
